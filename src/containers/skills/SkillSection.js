@@ -6,7 +6,7 @@ import FullStackImg from "./FullStackImg";
 
 function SkillSection(props) {
   return (
-    <div>
+    <div className="skill-container">
       {/* {skills.data.map((skill, index) => {
         return ( */}
       <div className="skills-main-div">

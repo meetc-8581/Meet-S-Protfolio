@@ -5,31 +5,32 @@ import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
-import { style } from "glamor";
+// import { style } from "glamor";
+import styled from "styled-components";
 
 function Header(props) {
   const theme = props.theme;
 
-  const styles = style({
-    cursor: "pointer",
-    height: "45px",
-    width: "45px",
-    marginRight: "5px",
-    marginLeft: "15px",
-    paddingTop: "5px",
-    borderRadius: "50%",
-    border: "none",
-    alignItems: "center",
-    justifyContent: "center",
-    backgroundColor: props.theme.name === "light" ? "#7CD1F7" : "#292C3F",
-    outline: "none",
-    transition: "all 0.2s ease-in-out",
-    ":hover": {
-      boxShadow: `0 3px 8px ${
-        props.theme.name === "light" ? "#F7D774" : "#646464"
-      }`,
-    },
-  });
+  const ThemeButtonComponent = styled.button`
+    cursor: pointer;
+    height: 45px;
+    width: 45px;
+    margin-right: 5px;
+    margin-left: 15px;
+    padding-top: 5px;
+    border-radius: 50%;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    background-color: ${props.theme.name === `light` ? `#7CD1F7` : `#292C3F`}
+    outline: none;
+
+    &.hover {
+      box-shadow: 0 3px 8px ${
+        props.theme.name === `light` ? `#F7D774` : `#646464`
+      }
+    }
+  `;
 
   const link = settings.isSplash ? "/splash" : "home";
 
@@ -133,9 +134,12 @@ function Header(props) {
                 Contact and Resume
               </NavLink>
             </li>
-            <button {...styles} onClick={changeTheme}>
+            <ThemeButtonComponent onClick={changeTheme}>
               {icon}
-            </button>
+            </ThemeButtonComponent>
+            {/* <button {...styles} onClick={changeTheme}>
+              {icon}
+            </button> */}
           </ul>
         </header>
       </div>

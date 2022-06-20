@@ -1,22 +1,34 @@
 import React from "react";
 import "./CertificationCard.css";
 import { Fade } from "react-reveal";
-import { style } from "glamor";
+import styled from "styled-components";
 
 function CertificationCard(props) {
   const certificate = props.certificate;
   const theme = props.theme;
-  const styles = style({
-    boxShadow: `0px 2px 5px ${certificate.color_code}`,
-    border: `1px solid ${certificate.color_code}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${certificate.color_code}`,
-    },
-  });
+
+  const CertificationCardComponent = styled.div`
+    width: 25vw;
+    height: 30vh;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    flex: 0 0 30%;
+    transition: all 0.2s ease-in-out;
+
+    box-shadow: 0px 2px 5px ${certificate.color_code};
+    border: 1px solid ${certificate.color_code};
+    &:hover {
+      box-shadow: 0 5px 15px ${certificate.color_code};
+    }
+  `;
 
   return (
     <Fade bottom duration={2000} distance="20px">
-      <div className="cert-card" {...styles}>
+      <CertificationCardComponent className="cert-card">
         <div className="content">
           <a
             href={certificate.certificate_link}
@@ -35,10 +47,10 @@ function CertificationCard(props) {
               />
             </div>
             {/* <div className="content-details fadeIn-top">
-									<h3 className="content-title" style={{ color: theme.body }}>
-										Certificate
-									</h3>
-								</div> */}
+              <h3 className="content-title" style={{ color: theme.body }}>
+                Certificate
+              </h3>
+            </div> */}
           </a>
         </div>
         <div className="cert-body">
@@ -52,7 +64,7 @@ function CertificationCard(props) {
             {certificate.subtitle}
           </h3>
         </div>
-      </div>
+      </CertificationCardComponent>
     </Fade>
   );
 }

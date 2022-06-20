@@ -5,18 +5,19 @@ import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import { useHistory } from "react-router-dom";
 import FeelingProud from "./FeelingProud";
-import { style } from "glamor";
+// import { style } from "glamor";
+import styled from "styled-components";
 
 export default function Greeting(props) {
   const theme = props.theme;
   const history = useHistory();
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
+  const ContactButtonComponent = styled.button`
+    background: ${theme.accentBright};
+    &.hover {
+      box-shadow: 0 5px 15px ${theme.accentBright};
+    }
+  `;
 
   return (
     <Fade bottom duration={2000} distance="40px">
@@ -37,15 +38,14 @@ export default function Greeting(props) {
               </p>
               <SocialMedia />
               <div className="portfolio-repo-btn-div">
-                <button
-                  {...styles}
+                <ContactButtonComponent
                   className="button"
                   onClick={() => {
                     history.push("/contact");
                   }}
                 >
                   Contact Me
-                </button>
+                </ContactButtonComponent>
               </div>
             </div>
           </div>

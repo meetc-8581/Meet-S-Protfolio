@@ -1,5 +1,9 @@
+.skill-container{
+  width: 100vw;
+}
 .skills-main-div {
   display: flex;
+  margin: 10px 100px;
 }
 
 .skills-header {
@@ -15,7 +19,7 @@
 
 .skills-text-div {
   font-family: "Google Sans Regular";
-  width : 100vw;
+  
 }
 
 .skills-main-div > * {

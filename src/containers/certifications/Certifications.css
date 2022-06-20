@@ -9,6 +9,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /* display: grid;
+    grid-template-columns: auto auto auto; */
 }
 
 @media (max-width: 1380px) {

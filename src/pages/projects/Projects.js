@@ -6,17 +6,18 @@ import { Fade } from "react-reveal";
 import { projectsHeader, projects } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
-import { style } from "glamor";
+import styled from "styled-components";
+// import { style } from "glamor";
 
 function Projects(props) {
   const theme = props.theme;
 
-  const styles = style({
-    backgroundColor: `${theme.accentBright}`,
-    ":hover": {
-      boxShadow: `0 5px 15px ${theme.accentBright}`,
-    },
-  });
+  const GitLinkComponent = styled.a`
+    background: ${theme.accentBright};
+    &:hover: {
+      boxshadow: 0 5px 15px ${theme.accentBright};
+    }
+  `;
 
   return (
     <div className="projects-main">
@@ -52,13 +53,14 @@ function Projects(props) {
       <br />
       <br />
       <br />
-      <a
-        {...styles}
+      <GitLinkComponent
+        target="_blank"
+        rel="noopener noreferrer"
         className="general-btn"
-        href="https://github.com/harikanani"
+        href="https://github.com/meetc-8581"
       >
         More Projects (Github)
-      </a>
+      </GitLinkComponent>
       <br />
       <br />
       <Footer theme={props.theme} onToggle={props.onToggle} />

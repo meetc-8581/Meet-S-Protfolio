@@ -5,6 +5,7 @@
   max-width: 90%;
   padding: 20px 10px;
   margin: -10px auto;
+  margin: 0px 12vw;
 }
 
 .header ul {
@@ -191,6 +192,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0px 7vw;
   }
   .header .menu {
     max-height: none;
