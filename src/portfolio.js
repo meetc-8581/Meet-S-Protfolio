@@ -2,7 +2,6 @@
 const settings = {
   isSplash: true,
   useCustomCursor: true,
-  googleTrackingID: "UA-174238252-2",
 };
 
 const greeting = {
@@ -294,7 +293,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "meet_profile.jpg",
     description:
-      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. ",
+      "You can contact me at the places mentioned below. I will try to get back to you as fast as I can. Want to hire? Feel free to hit me up ",
   },
 };
 

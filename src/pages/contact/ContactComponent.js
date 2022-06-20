@@ -45,7 +45,11 @@ function Contact(props) {
                 style={{ color: theme.secondaryText }}
               >
                 {ContactData["description"]}
+                <a href="mailto:meetchanchad7@gmail.com?subject=Hire Meet Chanchad">
+                  Here.
+                </a>
               </p>
+
               <SocialMedia />
               <br />
               <br />
