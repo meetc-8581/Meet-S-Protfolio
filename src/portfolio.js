@@ -11,7 +11,7 @@ const greeting = {
   nickname: "Meet",
   full_name: "Meet Chanchad",
   subTitle:
-    "I am a student persuing master's in comuter science at University of Texas at Dallas, focusing in software development with Data Structures, Full Stack applications and everything in between.",
+    "I am a student pursuing a master's in computer science at the University of Texas at Dallas, focusing on software development with Data Structures, Full Stack applications, and everything in between.",
   resumeLink: "",
   mail: "mailto:meetchanchad7@gmail.com",
 };
@@ -235,8 +235,9 @@ const certifications = {
 
 const experience = {
   title: "Experience",
-  subtitle: "Work and Internships",
-  description: "My work Experience so far and more to come.",
+  subtitle: "",
+  description:
+    "I have obtained a total of 11 months of interning experience. Gained experience in working with several programming languages, frameworks, and libraries. Building, Testing, and Deploying software and web applications in diverse environments.",
   header_image_path: "experience.svg",
   sections: [
     {

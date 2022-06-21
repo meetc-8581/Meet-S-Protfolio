@@ -32,11 +32,12 @@
 
 .projects-heading-text {
   font-size: 56px;
-  font-weight: 400;
-  font-family: "Google Sans Medium";
-  line-height: 1.1;
-  text-align: center;
-  margin-top: 80px;
+    font-weight: 400;
+    font-family: "Google Sans Medium";
+    line-height: 1.1;
+    text-align: start;
+    margin: 10px 135px;
+    margin-top: 80px;
 }
 
 .projects-heading-sub-text {
@@ -47,12 +48,15 @@
 }
 
 .projects-header-detail-text {
-  font-size: 20px;
+  font-size: 25px;
   line-height: 30px;
   margin-top: 0px;
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Google Sans Medium";
+  width: 30vw;
+  margin: auto;
+  text-align: start;
 }
 
 .repo-cards-div-main {

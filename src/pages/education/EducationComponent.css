@@ -34,14 +34,21 @@
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
-  text-align: center;
-  margin-top: 100px;
+  text-align: start;
+  margin: 10px 135px;
+  margin-top: 80px;
 }
 
 .heading-sub-text {
-  font-size: 30px;
-  font-family: "Google Sans Regular";
-  text-align: center;
+  font-size: 25px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+  width: 30vw;
+  margin: auto;
+  text-align: start;
 }
 
 @media (max-width: 1380px) {

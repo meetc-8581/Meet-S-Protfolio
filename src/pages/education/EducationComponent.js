@@ -22,9 +22,16 @@ function Education(props) {
               <h1 className="heading-text" style={{ color: theme.text }}>
                 Education
               </h1>
-              <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                Qualification and Certifications
-              </h3>
+              <p
+                className="heading-sub-text"
+                style={{ color: theme.secondaryText }}
+              >
+                I have completed a bachelor's in Computer Engineering from
+                Gujarat Technological University. I am presently pursuing a
+                Master's in Computer Science at the University of Texas at
+                Dallas. I am also certified for google cloud, DeepLearning.AI
+                and Python.
+              </p>
               <p
                 className="experience-header-detail-text subTitle"
                 style={{ color: theme.secondaryText }}

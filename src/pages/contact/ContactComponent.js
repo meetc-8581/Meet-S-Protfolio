@@ -5,9 +5,10 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 // import BlogsImg from "./BlogsImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import { contactPageData } from "../../portfolio.js";
 // import { style } from "glamor";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const ContactData = contactPageData.contactSection;
 
@@ -23,6 +24,7 @@ function Contact(props) {
 
   const ContactLinkComponent = styled.a`
     background-color: ${theme.accentBright};
+    text-decoration: none;
   `;
 
   return (
@@ -63,7 +65,8 @@ function Contact(props) {
               </a> */}
               <ContactLinkComponent
                 className="general-btn"
-                href={greeting.resumeLink}
+                href="./Meet_SWE_Resume_J_12.pdf"
+                target="_blank"
               >
                 See my Resume
               </ContactLinkComponent>
