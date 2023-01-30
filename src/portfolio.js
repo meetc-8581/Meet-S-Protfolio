@@ -237,7 +237,7 @@ const experience = {
   title: "Experience",
   subtitle: "",
   description:
-    "I have obtained a total of 11 months of interning experience. Gained experience in working with several programming languages, frameworks, and libraries. Building, Testing, and Deploying software and web applications in diverse environments.",
+    "I have obtained a total of 1.5 years of programming experience. Gained experience in working with several languages, frameworks, and libraries. Building, Testing, and Deploying software and web applications in diverse environments.",
   header_image_path: "experience.svg",
   sections: [
     {
