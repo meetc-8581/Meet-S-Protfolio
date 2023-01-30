@@ -7,13 +7,13 @@ const settings = {
 const greeting = {
   title: "Hey there !",
   title2: "Meet Chanchad",
-  logo_name: "Meet Chanchad",
+  logo_name: "Meet C.",
   nickname: "Meet",
   full_name: "Meet Chanchad",
   subTitle:
     "I am a student pursuing a master's in computer science at the University of Texas at Dallas, focusing on software development with Data Structures, Full Stack applications, and everything in between.",
   resumeLink: "",
-  mail: "mailto:meetchanchad7@gmail.com",
+  mail: "mailto:meet.s.chanchad@gmail.com",
 };
 
 const socialMediaLinks = {
@@ -244,6 +244,30 @@ const experience = {
       title: "Work Experience",
       experiences: [
         {
+          title: "Application Developer Intern",
+          company: "Midland Scientific Inc",
+          company_url: "",
+          logo_path: "Msi.png",
+          duration: "Sep 2022 - Dec 2022",
+          location: "Remote",
+          description: ` Designed and developed – Mind a PHP Laravel application for creating, monitoring, and managing 36 types of internal functions and
+          numerous products.Engineered project architecture by participating in meetings with stakeholders to understand, document and implement the
+          requirements. Designed and developed the MSSQL database to effectively meet complex requirements.Established seamless integration with commercial off-the-shelf ERP software.Employed test driven development to develop document sharing and review platform. Reduced Document review time by 90%.`,
+          color: "#2a79d7",
+        },
+        {
+          title: "Web and App Developer – Student Assistant",
+          company: "UT Dallas - ATEC",
+          company_url: "",
+          logo_path: "ut-dallas-logo02.png",
+          duration: "Aug 2022 - Sep 2022",
+          location: "Remote",
+          description: ` Responsible for the back-end development of the “Migrant Steps project”. Integrated the fitbit api with nodeJS backend. Assist the Lead developer in the development tasks and ensure seamless integration with the front-end. 
+          `,
+          color:
+            "linear-gradient(120deg, rgba(30,83,249,1) 0%, rgba(141,86,241,1) 45%, rgb(224 32 118) 100%)",
+        },
+        {
           title: "Software Developer Intern",
           company: "Amelia",
           company_url: "",
@@ -252,7 +276,8 @@ const experience = {
           location: "Remote",
           description: `Worked on development of a responsive web app called Amelia - A mental health tool for work. Utilized React, Axios, and reactrouter to create dynamic components for the SPA. Applied Agile development practice to create Node.js powered secure RESTfull API endpoints leveraging ExpressJS. Integrated MongoDB no-SQL database for fast and efficient database operations.
           `,
-          color: "#2a79d7",
+          color:
+            "linear-gradient(120deg, rgba(30,83,249,1) 0%, rgba(141,86,241,1) 45%, rgb(224 32 118) 100%)",
         },
         {
           title: "Web Development Intern",

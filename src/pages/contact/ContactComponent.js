@@ -65,7 +65,7 @@ function Contact(props) {
               </a> */}
               <ContactLinkComponent
                 className="general-btn"
-                href="./Meet_Resume_fontend_J.pdf"
+                href="./meet_resume.pdf"
                 target="_blank"
               >
                 See my Resume

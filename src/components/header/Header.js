@@ -5,6 +5,7 @@ import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import { CgSun } from "react-icons/cg/";
 import { HiMoon } from "react-icons/hi";
+import { HiOutlineTerminal } from "react-icons/hi";
 // import { style } from "glamor";
 import styled from "styled-components";
 
@@ -69,9 +70,23 @@ function Header(props) {
         <header className="header">
           <NavLink to={link} tag={Link} className="logo">
             <span style={{ color: theme.text }}></span>
-            <span className="logo-name" style={{ color: theme.text }}>
-              {greeting.logo_name}
-            </span>
+            <div style={{ display: "flex", alignItems: "center" }}>
+              <div>
+                <HiOutlineTerminal
+                  strokeWidth={1}
+                  size={50}
+                  color={props.theme.name === "light" ? "#F9D784" : "#A7A7A7"}
+                />
+              </div>
+              <div>
+                <span
+                  className="logo-name"
+                  style={{ color: theme.text, textAlign: "baseline" }}
+                >
+                  {greeting.logo_name}
+                </span>
+              </div>
+            </div>
             <span style={{ color: theme.text }}></span>
           </NavLink>
           {/* <input className="menu-btn" type="checkbox" id="menu-btn" />
